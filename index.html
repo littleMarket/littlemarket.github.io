@@ -6,93 +6,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Official website of Little Market LLC, a Connecticut-registered limited liability company operating digital platforms and consumer applications." />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <nav class="nav">
-      <div class="nav-brand">
-        <h1 class="logo">Little Market LLC</h1>
+  <div class="container">
+    <div class="card">
+      <h1 class="headline">Little Market LLC</h1>
+      <p class="tagline">Connecticut-registered limited liability company</p>
+      <p class="subline">
+        The company operates and manages digital platforms and consumer applications,
+        including mobile and web software products.
+      </p>
+      <div class="description">
+        <p>
+          For business, legal, or compliance inquiries, please contact:
+        </p>
       </div>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
-  </header>
+    </div>
 
-  <main class="main">
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-title">Little Market LLC</h1>
-          <p class="hero-subtitle">Connecticut-registered limited liability company</p>
-          <div class="hero-highlight"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-card">
-            <div class="card-icon">🏢</div>
-            <h3 class="card-title">Company Overview</h3>
-            <p class="card-description">
-              Little Market LLC is a Connecticut-registered limited liability company focused on digital innovation and consumer-centric solutions.
-            </p>
+    <div class="apps-section">
+      <h2 class="section-title">Our Apps</h2>
+      <div class="apps-grid">
+        <a href="https://app.ahoy.ooo" target="_blank" rel="noopener noreferrer" class="app-card">
+          <div class="app-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="12" fill="#1e1e1e"/>
+              <path d="M24 12L32 28H16L24 12Z" fill="#f6f8f3"/>
+              <circle cx="24" cy="32" r="4" fill="#f6f8f3"/>
+            </svg>
           </div>
-          
-          <div class="about-card">
-            <div class="card-icon">💻</div>
-            <h3 class="card-title">Digital Platforms</h3>
-            <p class="card-description">
-              We operate and manage digital platforms and consumer applications, including mobile and web software products.
-            </p>
+          <div class="app-info">
+            <h3>Ahoy</h3>
+            <p>Digital platform</p>
           </div>
-          
-          <div class="about-card">
-            <div class="card-icon">📱</div>
-            <h3 class="card-title">Innovation Focus</h3>
-            <p class="card-description">
-              Our team develops cutting-edge applications that enhance user experience and deliver meaningful value to consumers.
-            </p>
+          <span class="app-status live">Live</span>
+        </a>
+        <div class="app-card coming-soon">
+          <div class="app-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="12" fill="#6b6f66"/>
+              <path d="M14 34L24 14L34 34" stroke="#f6f8f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="24" cy="28" r="3" fill="#f6f8f3"/>
+            </svg>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact">
-      <div class="container">
-        <div class="contact-content">
-          <h2 class="section-title">Get in Touch</h2>
-          <p class="contact-description">
-            For business, legal, or compliance inquiries, please reach out to our team.
-          </p>
-          <div class="contact-info">
-            <a href="mailto:alex@littlemarket.org" class="contact-email">
-              <span class="email-icon">📧</span>
-              alex@littlemarket.org
-            </a>
+          <div class="app-info">
+            <h3>Pathr</h3>
+            <p>Like Strava for driving</p>
           </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p class="copyright">© Little Market LLC</p>
-        <div class="footer-links">
-          <span class="footer-year" id="current-year">2024</span>
+          <span class="app-status soon">Coming Soon</span>
         </div>
       </div>
     </div>
-  </footer>
+
+    <div class="contact-section">
+      <div class="contact-card">
+        <h2>Contact</h2>
+        <p>Get in touch with our team</p>
+        <a href="mailto:alex@littlemarket.org" class="email-link">alex@littlemarket.org</a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <a href="/privacy.html" class="footer-link">Privacy Policy</a>
+        <p>&copy; Little Market LLC <span id="current-year">2024</span></p>
+      </div>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
