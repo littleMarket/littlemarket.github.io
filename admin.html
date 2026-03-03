@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Little Market</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="auth-overlay" class="overlay active">
+        <div class="auth-card">
+            <h2>Admin Access</h2>
+            <p>Please enter your PIN to continue.</p>
+            <input type="password" id="pin-input" placeholder="Enter PIN" autocomplete="new-password">
+            <button id="login-btn">Secure Login</button>
+            <p id="auth-error" class="error-text hidden">Incorrect PIN.</p>
+        </div>
+    </div>
+
+    <main id="dashboard" class="hidden">
+        <header>
+            <div class="header-content">
+                <h1>Legal Obligations Tracker</h1>
+                <p>Stay on top of your business requirements.</p>
+            </div>
+            <button id="logout-btn" class="secondary-btn">Lock Dashboard</button>
+        </header>
+
+        <section class="task-list">
+            <div class="task-card" data-id="ct-annual-report-2026">
+                <div class="task-info">
+                    <span class="badge warning">Due: March 31, 2026</span>
+                    <h3>2026 Annual Report - CT Secretary of State</h3>
+                    <p>File online at business.ct.gov for Little Market LLC (US-CT.BER3201333).</p>
+                    <a href="https://business.ct.gov" target="_blank" class="external-link">Go to Filing Portal ↗</a>
+                </div>
+                <div class="task-action">
+                    <button class="mark-done-btn">Mark as Completed</button>
+                    <div class="completed-info hidden">
+                        <span class="check-icon">✓</span>
+                        <span class="completion-date">Completed on <span class="date-val"></span></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="task-card" data-id="yearly-taxes-2025">
+                <div class="task-info">
+                    <span class="badge normal">Due: April 15, 2026</span>
+                    <h3>2025 Federal & State Taxes</h3>
+                    <p>Ensure all revenue and expenses are reconciled and filed with your CPA.</p>
+                </div>
+                <div class="task-action">
+                    <button class="mark-done-btn">Mark as Completed</button>
+                    <div class="completed-info hidden">
+                        <span class="check-icon">✓</span>
+                        <span class="completion-date">Completed on <span class="date-val"></span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="admin.js"></script>
+</body>
+</html>
