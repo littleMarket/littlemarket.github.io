@@ -52,13 +52,13 @@ function initializeMascot() {
 
   let count = parseInt(localStorage.getItem('lm_pets') || '0', 10);
   const messages = [
-    'say hi! 🍓', 'hehe 💕', 'again? 🥰', 'so sweet ✨',
-    'yay! 🌷', 'more! 🍓', 'berry nice! 🌼', 'eeee! 🌸'
+    'say hi!', 'hehe', 'again?', 'so sweet',
+    'yay!', 'more!', 'berry nice!', 'eeee!'
   ];
 
   const render = () => {
     if (count === 0) {
-      counter.textContent = 'say hi! 🍓';
+      counter.textContent = 'say hi!';
     } else {
       const msg = messages[count % messages.length];
       counter.textContent = `${msg}  ·  ${count} pet${count === 1 ? '' : 's'}`;
@@ -68,11 +68,11 @@ function initializeMascot() {
   render();
 
   const milestones = {
-    10:  '🌸 new friend unlocked!',
-    25:  '🍓 berry buddy!',
-    50:  '🌼 regular customer!',
-    100: '✨ market legend!',
-    250: '👑 honorary strawberry!'
+    10:  'new friend unlocked!',
+    25:  'berry buddy!',
+    50:  'regular customer!',
+    100: 'market legend!',
+    250: 'honorary strawberry!'
   };
 
   mascot.addEventListener('click', () => {
