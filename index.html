@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <title>Little Market LLC</title>
+  <title>Little Market 🍓</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Official website of Little Market LLC, a Connecticut-registered limited liability company operating digital platforms and consumer applications." />
+  <meta name="description"
+    content="Official website of Little Market LLC, a Connecticut-registered limited liability company operating digital platforms and consumer applications." />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Little Market LLC" />
-  <meta property="og:description" content="Connecticut-registered LLC operating digital platforms and consumer applications." />
+  <meta property="og:description"
+    content="Connecticut-registered LLC operating digital platforms and consumer applications." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://littlemarket.github.io/" />
   <meta property="og:site_name" content="Little Market LLC" />
@@ -16,14 +19,90 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Little Market LLC" />
-  <meta name="twitter:description" content="Connecticut-registered LLC operating digital platforms and consumer applications." />
+  <meta name="twitter:description"
+    content="Connecticut-registered LLC operating digital platforms and consumer applications." />
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+  <div class="splash" id="splash">
+    <div class="splash-peach">🍓</div>
+  </div>
+  <div class="floating-fruits" aria-hidden="true">
+    <span class="fruit f1">🍓</span>
+    <span class="fruit f2">🌸</span>
+    <span class="fruit f3">🍓</span>
+    <span class="fruit f4">🌼</span>
+    <span class="fruit f5">🍊</span>
+    <span class="fruit f6">🍃</span>
+  </div>
+  <div class="sky" id="sky" aria-hidden="true">
+    <div class="sun" id="sun"></div>
+    <div class="stars" id="stars"></div>
+  </div>
   <div class="container">
-    <div class="card">
+    <div class="mascot-wrap">
+      <svg class="mascot" id="mascot" width="180" height="160" viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg" role="button" aria-label="Pet the peach">
+        <!-- awning -->
+        <path d="M20 52 Q90 36 160 52 L160 60 L20 60 Z" fill="#F5B5A0"/>
+        <path d="M20 52 L40 60 L60 52 L80 60 L100 52 L120 60 L140 52 L160 60" stroke="#FFF8EC" stroke-width="2" fill="none"/>
+        <!-- stall posts -->
+        <rect x="22" y="58" width="4" height="60" rx="2" fill="#C98B7A"/>
+        <rect x="154" y="58" width="4" height="60" rx="2" fill="#C98B7A"/>
+        <!-- counter -->
+        <rect x="18" y="110" width="144" height="10" rx="3" fill="#D9A47A"/>
+        <rect x="18" y="118" width="144" height="22" rx="3" fill="#C98B7A"/>
+        <!-- ground shadow -->
+        <ellipse cx="90" cy="146" rx="52" ry="4" fill="#5C4A3A" opacity="0.12"/>
+        <!-- basket of fruit on counter (left) -->
+        <ellipse cx="40" cy="108" rx="12" ry="4" fill="#8A5A3B"/>
+        <circle cx="36" cy="104" r="4" fill="#E8B4A6"/>
+        <circle cx="44" cy="104" r="4" fill="#F5B5A0"/>
+        <circle cx="40" cy="100" r="4" fill="#FCE4D6"/>
+        <!-- basket (right) -->
+        <ellipse cx="140" cy="108" rx="12" ry="4" fill="#8A5A3B"/>
+        <circle cx="136" cy="104" r="4" fill="#D4E8C8"/>
+        <circle cx="144" cy="104" r="4" fill="#B8D8A0"/>
+        <circle cx="140" cy="100" r="4" fill="#D4E8C8"/>
+        <!-- strawberry leaves -->
+        <path d="M72 68 Q78 58 86 64 Q94 58 104 64 Q110 58 108 70 Q98 72 90 70 Q82 72 72 68 Z" fill="#7FB069"/>
+        <path d="M90 62 L90 70" stroke="#5C7548" stroke-width="1.5" stroke-linecap="round"/>
+        <!-- strawberry body -->
+        <path d="M62 72 Q90 66 118 72 Q114 108 90 118 Q66 108 62 72 Z" fill="#F04A5A"/>
+        <!-- seeds -->
+        <ellipse cx="74" cy="82" rx="1.5" ry="2" fill="#FFE08A" transform="rotate(-20 74 82)"/>
+        <ellipse cx="90" cy="78" rx="1.5" ry="2" fill="#FFE08A"/>
+        <ellipse cx="106" cy="82" rx="1.5" ry="2" fill="#FFE08A" transform="rotate(20 106 82)"/>
+        <ellipse cx="82" cy="104" rx="1.5" ry="2" fill="#FFE08A"/>
+        <ellipse cx="98" cy="104" rx="1.5" ry="2" fill="#FFE08A"/>
+        <ellipse cx="90" cy="112" rx="1.5" ry="2" fill="#FFE08A"/>
+        <ellipse cx="70" cy="94" rx="1.5" ry="2" fill="#FFE08A"/>
+        <ellipse cx="110" cy="94" rx="1.5" ry="2" fill="#FFE08A"/>
+        <!-- cheeks -->
+        <ellipse cx="76" cy="96" rx="5.5" ry="4" fill="#F89AA3" opacity="0.75"/>
+        <ellipse cx="104" cy="96" rx="5.5" ry="4" fill="#F89AA3" opacity="0.75"/>
+        <!-- eyes -->
+        <circle class="eye" cx="80" cy="90" r="3" fill="#5C4A3A"/>
+        <circle class="eye" cx="100" cy="90" r="3" fill="#5C4A3A"/>
+        <circle cx="81" cy="89" r="1" fill="#FFF8EC"/>
+        <circle cx="101" cy="89" r="1" fill="#FFF8EC"/>
+        <!-- smile -->
+        <path d="M85 100 Q90 104 95 100" stroke="#5C4A3A" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <!-- tiny arms -->
+        <path d="M62 108 Q66 112 70 110" stroke="#C93545" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M118 108 Q114 112 110 110" stroke="#C93545" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <!-- sign -->
+        <rect x="70" y="122" width="40" height="12" rx="2" fill="#FFF8EC" stroke="#8A7560" stroke-width="1"/>
+        <text x="90" y="131" text-anchor="middle" font-family="Quicksand, sans-serif" font-size="7" font-weight="700" fill="#C98B7A">OPEN</text>
+      </svg>
+      <div class="pet-counter" id="pet-counter">say hi! 🍓</div>
+    </div>
+    <div class="card reveal">
       <h1 class="headline">Little Market LLC</h1>
       <p class="tagline">Connecticut-registered limited liability company</p>
       <p class="subline">
@@ -32,50 +111,40 @@
       </p>
       <div class="description">
         <p>
-          For business, legal, or compliance inquiries, please contact:
+          For business, legal, or compliance inquiries, please contact: legal@littlemarket.org
         </p>
       </div>
     </div>
 
-    <div class="apps-section">
-      <h2 class="section-title">Our Apps</h2>
+    <svg class="squiggle" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M2 10 Q 15 2, 30 10 T 60 10 T 90 10 T 120 10 T 150 10 T 180 10 T 198 10" stroke="#C98B7A" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </svg>
+
+    <div class="apps-section reveal">
+      <h2 class="section-title">Our Apps 🌸</h2>
       <div class="apps-grid">
         <a href="https://app.ahoy.ooo" target="_blank" rel="noopener noreferrer" class="app-card">
           <div class="app-icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" rx="12" fill="#1e1e1e"/>
-              <path d="M24 12L32 28H16L24 12Z" fill="#f6f8f3"/>
-              <circle cx="24" cy="32" r="4" fill="#f6f8f3"/>
-            </svg>
+            <img src="https://play-lh.googleusercontent.com/JFcRsla3PlhhXS7du8G9Khbad6760jq2MOwmycN20qmWWhB3CgZu4tZYGLuEQGiT4g7kPSlo78ODPjnB7yiXqaA=w240-h480-rw" alt="Ahoy Indie Media" class="app-icon-img" />
           </div>
           <div class="app-info">
-            <h3>Ahoy</h3>
-            <p>Digital platform</p>
+            <h3>Ahoy Indie Media</h3>
+            <p>Digital platform for indie creators</p>
           </div>
           <span class="app-status live">Live</span>
         </a>
-        <div class="app-card coming-soon">
-          <div class="app-icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" rx="12" fill="#6b6f66"/>
-              <path d="M14 34L24 14L34 34" stroke="#f6f8f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="24" cy="28" r="3" fill="#f6f8f3"/>
-            </svg>
-          </div>
-          <div class="app-info">
-            <h3>Pathr</h3>
-            <p>Like Strava for driving</p>
-          </div>
-          <span class="app-status soon">Coming Soon</span>
-        </div>
       </div>
     </div>
 
-    <div class="contact-section">
+    <svg class="squiggle" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M2 10 Q 15 18, 30 10 T 60 10 T 90 10 T 120 10 T 150 10 T 180 10 T 198 10" stroke="#C98B7A" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </svg>
+
+    <div class="contact-section reveal">
       <div class="contact-card">
-        <h2>Contact</h2>
+        <h2>Contact 🍓</h2>
         <p>Get in touch with our team</p>
-        <a href="mailto:alex@littlemarket.org" class="email-link">alex@littlemarket.org</a>
+        <a href="mailto:contact@littlemarket.org" class="email-link">contact@littlemarket.org</a>
       </div>
     </div>
 
@@ -89,4 +158,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
