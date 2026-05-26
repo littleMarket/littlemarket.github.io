@@ -7,14 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initializeAccessibility();
   initializeMascot();
   initializeReveal();
-  initializeSplash();
 });
-
-function initializeSplash() {
-  const splash = document.getElementById('splash');
-  if (!splash) return;
-  setTimeout(() => splash.remove(), 1400);
-}
 
 function initializeReveal() {
   const items = document.querySelectorAll('.reveal');

@@ -4,32 +4,32 @@ A modern, responsive website for Little Market LLC - a Connecticut-registered li
 
 ## Features
 
-### 🎨 Modern Design
+### Modern Design
 - **Beautiful UI**: Clean, modern design with glassmorphism effects
 - **Responsive Layout**: Mobile-first approach with CSS Grid and Flexbox
 - **Typography**: Custom typography scale using `clamp()` for fluid sizing
 - **Color System**: Comprehensive color palette with CSS custom properties
 - **Dark Mode**: Automatic dark mode support based on user preference
 
-### 🚀 Performance
+### Performance
 - **Optimized CSS**: Efficient CSS with minimal redundancy
 - **Fast Loading**: Optimized assets and preloading of critical resources
 - **Smooth Animations**: GPU-accelerated animations with `will-change`
 - **Accessibility**: WCAG compliant with proper focus management
 
-### 📱 Responsive Design
+### Responsive Design
 - **Mobile-First**: Designed for mobile devices first
 - **Flexible Grid**: Auto-fitting grid layouts for all screen sizes  
 - **Fluid Typography**: Scales smoothly across all device sizes
 - **Touch-Friendly**: Optimized for touch interactions
 
-### ✨ Interactive Features
+### Interactive Features
 - **Scroll Effects**: Parallax hero background and scroll-triggered animations
 - **Smooth Navigation**: Auto-hiding header with smooth transitions
 - **Card Animations**: Hover effects with glow and transform animations
 - **Email Integration**: Direct mailto functionality with visual feedback
 
-### ♿ Accessibility
+### Accessibility
 - **Keyboard Navigation**: Full keyboard support with visible focus indicators
 - **Screen Reader**: Proper ARIA attributes and semantic HTML
 - **Skip Links**: Skip to main content functionality
@@ -47,10 +47,10 @@ littlemarket.github.io/
 
 ## Browser Support
 
-- ✅ Chrome/Chromium 88+
-- ✅ Firefox 85+
-- ✅ Safari 14+
-- ✅ Edge 88+
+- Chrome/Chromium 88+
+- Firefox 85+
+- Safari 14+
+- Edge 88+
 
 ## Development
 
@@ -81,7 +81,7 @@ php -S localhost:8000
 - **Performance Optimized**: Throttled scroll events with `requestAnimationFrame`
 - **Accessibility First**: Keyboard navigation and screen reader support
 - **Error Handling**: Graceful degradation for older browsers
-- **Easter Egg**: Hidden Konami code feature 🎮
+- **Easter Egg**: Hidden Konami code feature
 
 ## Customization
 

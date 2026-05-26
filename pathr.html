@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pathr Preview | Little Market</title>
+  <meta name="description"
+    content="Preview page for Pathr, a driving log that turns trips into a personal map." />
+  <meta property="og:title" content="Pathr Preview | Little Market" />
+  <meta property="og:description"
+    content="Preview page for Pathr, a driving log that turns trips into a personal map." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://littlemarket.github.io/pathr.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Pathr Preview | Little Market" />
+  <meta name="twitter:description"
+    content="Preview page for Pathr, a driving log that turns trips into a personal map." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="sky" id="sky" aria-hidden="true">
+    <div class="sun" id="sun"></div>
+    <div class="stars" id="stars"></div>
+  </div>
+
+  <div class="preview-shell">
+    <a class="preview-back" href="index.html#coming-soon">Back to Little Market</a>
+
+    <main class="preview-card reveal">
+      <div class="preview-header">
+        <span class="preview-kicker">Soon</span>
+        <p class="preview-header-copy">Driving logs, turned into a route diary.</p>
+      </div>
+      <h1>Pathr</h1>
+      <p class="preview-summary">
+        Like Strava for driving. Pathr records your trips, surfaces scenic routes, and builds a
+        personal map of everywhere you&apos;ve been.
+      </p>
+
+      <div class="preview-sections">
+        <section class="preview-section">
+          <h2>What it does</h2>
+          <p>
+            Pathr records trips in the background, keeps battery use in mind, and turns each drive
+            into a live route you can revisit later.
+          </p>
+        </section>
+
+        <section class="preview-section">
+          <h2>MVP focus</h2>
+          <ul class="preview-list">
+            <li>Start, stop, pause, and resume trip recording.</li>
+            <li>See a live polyline as you drive.</li>
+            <li>Browse trip details, distance, duration, and speed.</li>
+          </ul>
+        </section>
+
+        <section class="preview-section">
+          <h2>Design direction</h2>
+          <p>
+            The UI leans into liquid glass: frosted surfaces, soft gradients, and a map-first layout
+            where the route stays the focus.
+          </p>
+        </section>
+
+        <section class="preview-section">
+          <h2>Privacy note</h2>
+          <p>
+            Trips stay private by default, with share links only for completed drives and controls
+            for hiding start and end locations.
+          </p>
+        </section>
+      </div>
+
+      <p class="preview-note">
+        Still in preview, but the goal is simple: make every drive feel worth keeping.
+      </p>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="index.html" class="footer-link">Home</a>
+          <span class="divider" aria-hidden="true">•</span>
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        </nav>
+        <p>&copy; Little Market LLC <span id="current-year">2024</span></p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

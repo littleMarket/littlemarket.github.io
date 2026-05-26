@@ -3,24 +3,24 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Little Market 🍓</title>
+  <title>Little Market</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Official website of Little Market LLC, a Connecticut-registered limited liability company operating digital platforms and consumer applications." />
+    content="Little Market's home on the web, with company details and a look at upcoming projects." />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Little Market LLC" />
+  <meta property="og:title" content="Little Market" />
   <meta property="og:description"
-    content="Connecticut-registered LLC operating digital platforms and consumer applications." />
+    content="Little Market's home on the web, with company details and a look at upcoming projects." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://littlemarket.github.io/" />
   <meta property="og:site_name" content="Little Market LLC" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Little Market LLC" />
+  <meta name="twitter:title" content="Little Market" />
   <meta name="twitter:description"
-    content="Connecticut-registered LLC operating digital platforms and consumer applications." />
+    content="Little Market's home on the web, with company details and a look at upcoming projects." />
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,17 +30,6 @@
 </head>
 
 <body>
-  <div class="splash" id="splash">
-    <div class="splash-peach">🍓</div>
-  </div>
-  <div class="floating-fruits" aria-hidden="true">
-    <span class="fruit f1">🍓</span>
-    <span class="fruit f2">🌸</span>
-    <span class="fruit f3">🍓</span>
-    <span class="fruit f4">🌼</span>
-    <span class="fruit f5">🍊</span>
-    <span class="fruit f6">🍃</span>
-  </div>
   <div class="sky" id="sky" aria-hidden="true">
     <div class="sun" id="sun"></div>
     <div class="stars" id="stars"></div>
@@ -106,8 +95,7 @@
       <h1 class="headline">Little Market LLC</h1>
       <p class="tagline">Connecticut-registered limited liability company</p>
       <p class="subline">
-        The company operates and manages digital platforms and consumer applications,
-        including mobile and web software products.
+        A small home for Little Market's projects, company details, and public-facing work.
       </p>
       <div class="description">
         <p>
@@ -136,6 +124,42 @@
       </div>
     </div>
 
+    <div class="apps-section reveal" id="coming-soon">
+      <h2 class="section-title">Coming Soon</h2>
+      <div class="apps-grid">
+        <div class="app-card coming-soon" aria-label="Mates coming soon">
+          <div class="app-info">
+            <h3>Mates</h3>
+            <p>A field guide to the world's quiet friendships. Mates maps which countries share borders, languages, currencies, and treaties - surfacing the alliances, blocs, and overlaps that shape the globe but rarely make the news.</p>
+          </div>
+          <div class="app-card-actions">
+            <span class="app-status soon">Soon</span>
+            <a href="mates.html" class="preview-link">Preview page</a>
+          </div>
+        </div>
+        <div class="app-card coming-soon" aria-label="Under the Law coming soon">
+          <div class="app-info">
+            <h3>Under the Law</h3>
+            <p>At any given moment, you're governed by a stack of laws - federal, state, county, city, sometimes more. Under the Law shows you which rules apply, where they change, and what's different one block over.</p>
+          </div>
+          <div class="app-card-actions">
+            <span class="app-status soon">Soon</span>
+            <a href="under-the-law.html" class="preview-link">Preview page</a>
+          </div>
+        </div>
+        <div class="app-card coming-soon" aria-label="Pathr coming soon">
+          <div class="app-info">
+            <h3>Pathr</h3>
+            <p>Like Strava for driving. Pathr records your trips, surfaces scenic routes, and turns every drive into a personal map of where you&apos;ve been.</p>
+          </div>
+          <div class="app-card-actions">
+            <span class="app-status soon">Soon</span>
+            <a href="pathr.html" class="preview-link">Preview page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <svg class="squiggle" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <path d="M2 10 Q 15 18, 30 10 T 60 10 T 90 10 T 120 10 T 150 10 T 180 10 T 198 10" stroke="#C98B7A" stroke-width="2" fill="none" stroke-linecap="round"/>
     </svg>
@@ -150,7 +174,11 @@
 
     <footer class="footer">
       <div class="footer-content">
-        <a href="/privacy.html" class="footer-link">Privacy Policy</a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#coming-soon" class="footer-link">Coming Soon</a>
+          <span class="divider" aria-hidden="true">•</span>
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        </nav>
         <p>&copy; Little Market LLC <span id="current-year">2024</span></p>
       </div>
     </footer>
